@@ -1,3 +1,5 @@
+const prompt= require('prompt-sync')();
+
 n1=0
 n2=0
 n3=0
@@ -8,3 +10,5 @@ var n2 = parseInt(prompt("Digite a segunda nota: "));
 var n3 = parseInt(prompt("Digite a terceira nota: "));
 var m= (n1+n2+n3)/3
 console.log(`A média do aluno é: ${m}`);
+let result = (m >= 7) ? 'Aprovado' : 'Reprovado';
+console.log(`O Aluno está ${result}`);
